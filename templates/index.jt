@@ -19,7 +19,7 @@ $)
     </div>
   </div>
   <div id="footer">
-    &copy; ${ (new Date()).getFullYear() } odonnell pdc
+    &copy; ${ (new Date()).getFullYear() } Thom Blake
   </div>
   <div class="clearing">&nbsp;</div>
 </div>
