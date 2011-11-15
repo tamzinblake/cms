@@ -8,14 +8,14 @@ var express = require('express')
 var app = express.createServer( express.bodyParser() )
   , required = {}
   , oneYear = 31557600000
-  , contentRoot = path.resolve(__dirname ,'/content')
+  , contentRoot = path.resolve(__dirname ,'content')
 
 app.use(express.favicon(__dirname + '/htdocs/favicon.ico'))
 app.use(express.static(__dirname + '/htdocs' ,{ maxAge: oneYear }))
 
 app.get( '/*?' ,function (req ,res) {
   var path = split_params(req.params[0])
-    , filename = path[1] || '404'
+    , filename = path[0] || '404'
     , fileList = fs.readdirSync(contentRoot)
 
   filename += '.md'
@@ -24,15 +24,15 @@ app.get( '/*?' ,function (req ,res) {
     filename = '404.md'
   }
 
-  var content = fs.readFileSync(filename ,'utf8')
-  res.send(template.process( 'index' ,{ content: md(content)
-                                      , title: 'foo'
-                                      , root: '/'
-                                      } ))
+  var content = fs.readFileSync(contentRoot + '/' + filename ,'utf8')
+  res.send(template( 'index' ,{ content: md(content)
+                              , title: 'Site title'
+                              , root: ''
+                              } ))
 })
 
 function split_params (params) {
-  params = params == undefined ? '' : params
+  params = (params == undefined) ? '' : params
   return params.split(/\//)
 }
 
