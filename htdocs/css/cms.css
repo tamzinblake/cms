@@ -1,0 +1,68 @@
+h1 {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+body {
+  background-color: #999999;
+  margin: 0;
+  padding: 20px;
+  color: #000000;
+  font-family: Cambria,'Times New Roman','Nimbus Roman No9 L','Freeserif',Times,serif;
+}
+kbd, code, pre {
+  font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif
+}
+pre, code {
+  padding: 5px;
+  background-color: #eeeeee;
+  overflow: auto;
+  width: auto;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+div#wrapper {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #ffffff;
+}
+div#header {
+  background-color: #ffffff;
+}
+div#pre_logo {
+  background-color: #ffffff;
+}
+div#logo {
+  background-color: #ffffff;
+}
+div#post_logo {
+  background-color: #ffffff;
+  text-align: right;
+}
+div#body {
+  background-color: #ffffff;
+}
+div#content {
+  background-color: #ffffff;
+  width: 100%;
+}
+div#footer {
+  clear: both;
+  background-color: #ffffff;
+}
+div.clearing {
+  height: 0;
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+#logo a {
+  text-decoration: none;
+  color: #000000;
+}

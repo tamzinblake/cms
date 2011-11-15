@@ -1,0 +1,26 @@
+$(IMPORT (header))
+$(IMPORT (footer))
+$(WRAP header()
+$)
+<div id="wrapper">
+  <div id="header">
+    <div id="pre_logo">
+    </div>
+    <div id="logo">
+      <h1>$this.title</a>
+    </div>
+    <div id="post_logo">
+      <a href="/">Home</a>
+    </div>
+  </div>
+  <div id="body">
+    <div id="content">
+        $this.content
+    </div>
+  </div>
+  <div id="footer">
+    &copy; ${ (new Date()).getFullYear() } odonnell pdc
+  </div>
+  <div class="clearing">&nbsp;</div>
+</div>
+${ footer() }

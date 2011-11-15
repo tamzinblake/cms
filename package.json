@@ -1,0 +1,20 @@
+{ "name": "cms"
+, "author" : "Thom Blake <thethomblake@gmail.com> (http://thomblake.com)"
+, "description" : "Lightweight content management system"
+, "keywords" : [ "ghm", "cms" ]
+, "version" : "0.0.1-1"
+, "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/thomblake/cms.git"
+  }
+, "bugs" :
+  { "web" : "http://github.com/thomblake/cms/issues"
+  }
+, "directories" :
+  { "lib" : "./lib"
+  }
+, "dependencies" :
+  { "yajet" : "*"
+  , "ghm" : "*"
+  }
+}
