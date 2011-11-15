@@ -8,7 +8,7 @@
   , "url" : "https://github.com/thomblake/cms.git"
   }
 , "bugs" :
-  { "web" : "http://github.com/thomblake/cms/issues"
+  { "url" : "http://github.com/thomblake/cms/issues"
   }
 , "directories" :
   { "lib" : "./lib"
