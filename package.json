@@ -16,5 +16,6 @@
 , "dependencies" :
   { "yajet" : "*"
   , "ghm" : "*"
+  , "express" : "*"
   }
 }

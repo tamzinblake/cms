@@ -3,7 +3,7 @@ var express = require('express')
   , md = require('ghm').parse
   , fs = require('fs')
   , path = require('path')
-  , template = require('lib/template')
+  , template = require('./lib/template')
 
 var app = express.createServer( express.bodyParser() )
   , required = {}
