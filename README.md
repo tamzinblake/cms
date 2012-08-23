@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/thomblake/cms.png)](http://travis-ci.org/thomblake/cms)
 ## thomblake/cms ##
 
 A lightweight CMS
